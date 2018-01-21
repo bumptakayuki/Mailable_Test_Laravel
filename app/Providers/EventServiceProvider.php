@@ -16,6 +16,12 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\Event' => [
             'App\Listeners\EventListener',
         ],
+        'App\Events\PersonalAlertCreated' => [
+            'App\Listeners\SendPersonalAlert',
+        ],
+        'App\Events\PublicAlertCreated' => [
+            'App\Listeners\SendPublicAlert',
+        ],
     ];
 
     /**

@@ -1018,6 +1018,7 @@ $(function () {
             $('.alert').removeClass('hidden');
             console.log("success");
         }).fail(function () {
+            $('.alert').removeClass('hidden');
             console.log("error");
         }).always(function () {
             console.log("complete");

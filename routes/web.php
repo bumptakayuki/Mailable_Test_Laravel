@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/posts/{post}', 'HomeController@posts')->name('posts.detail');
 
 Route::post('/send-like/{post}', 'HomeController@sendLike')->name('send.like');
+Route::post('/send-dislike/{post}', 'HomeController@sendDislike')->name('send.dislike');
+Route::post('/send-whatever/{post}', 'HomeController@sendWhatever')->name('send.whatever');
+Route::post('/send-yourname/{post}', 'HomeController@sendYourname')->name('send.yourname');
